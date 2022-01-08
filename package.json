@@ -1,0 +1,22 @@
+{
+    "name": "markdown-it-trimmer",
+    "version": "0.1.0",
+    "description": "Trim whitespace when rendering markdown into html",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "markdown-it-trimmer"
+    },
+    "keywords": [
+        "markdown",
+        "markdown-it",
+        "plugin",
+        "whitespace",
+        "trim"
+    ],
+    "author": "Ulf Schneider",
+    "license": "MIT"
+}
