@@ -1,1 +1,44 @@
-# Initial commit
+A markdown-it plugin to trim some whitespace from the resulting markup.
+The trimming occurs during the rendering process of the markup.
+
+## Opening list items <li>
+
+After opening list items with `<li>` , any whitespace, including new lines, is removed. 
+This can be useful when you are styling your list items with `li::before` and use display settings of `inline` or `inline-grid` (as an example). 
+In such scenarios a whitespace between the opening `<li>` tag and the following content would always be rendered as an additional space
+by the browser, which is something you typically wouldn´t want.
+
+With the markdown-it-trimmer the following output html will never be produced:
+
+```html
+<ul>
+    <li>
+        <p>Hello world</p>
+    </li>
+</ul>
+```
+
+Instead, the markup will get trimmed into:
+
+```html
+<ul>
+    <li><p>Hello world</p>
+    </li>
+</ul>
+```
+
+## Usage
+
+```js
+var markdownIt = require('markdown-it');
+var markdownItTrimmer = require('markdown-it-trimmer');
+
+markdownIt({
+        html: true
+    })
+    .use(markdownItTrimmer);
+```
+
+## Configuration
+
+There is no configuration.

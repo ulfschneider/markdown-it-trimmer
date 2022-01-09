@@ -1,6 +1,6 @@
 {
     "name": "markdown-it-trimmer",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Trim whitespace when rendering markdown into html",
     "main": "index.js",
     "scripts": {
