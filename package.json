@@ -1,6 +1,6 @@
 {
     "name": "markdown-it-trimmer",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Trim whitespace when rendering markdown into html",
     "main": "index.js",
     "scripts": {
@@ -8,8 +8,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "markdown-it-trimmer"
+        "url": "git+https://github.com/ulfschneider/markdown-it-trimmer.git"
     },
+    "bugs": {
+        "url": "https://github.com/ulfschneider/markdown-it-trimmer/issues"
+    },
+    "homepage": "https://ulf.codes/",
     "keywords": [
         "markdown",
         "markdown-it",
