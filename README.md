@@ -1,7 +1,7 @@
 A markdown-it plugin to trim some whitespace from the resulting markup.
 The trimming occurs during the rendering process of the markup.
 
-## Opening list items <li>
+## Opening list items &lt;li&gt;
 
 After opening list items with `<li>` , any whitespace, including new lines, is removed. 
 This can be useful when you are styling your list items with `li::before` and use display settings of `inline` or `inline-grid` (as an example). 
